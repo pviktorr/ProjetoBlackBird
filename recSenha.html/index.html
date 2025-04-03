@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rec_senha.css">
+    <script src="rec_senha.js" defer></script>
+    <title>RecSenha</title>
+</head>
+
+<body>
+    <!-- Tela de Recuperação de Senha (inicialmente escondida com a classe 'hidden') -->
+    <div class="container hidden" id="forgot-password-container">
+        <div class="login-box">
+            <h2>Reset Password</h2>
+            <p>Enter your email to receive reset instructions.</p>
+
+            <!-- Campo para inserir o e-mail -->
+            <div class="quadrado">
+                <input type="email" placeholder="Your Email">
+                <span class="icon">📧</span>
+            </div>
+
+            <!-- Botão para enviar link de recuperação -->
+            <button class="login-btn">Send Reset Link</button>
+
+            <!-- Link para voltar ao login -->
+            <p class="register"><a href="/login/login.html">Back to Login</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

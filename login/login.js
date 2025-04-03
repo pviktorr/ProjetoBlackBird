@@ -1,22 +1,6 @@
 'use strict'
 
-/// Alterna a visibilidade da senha
-function togglePassword() {
-    const passwordInput = document.getElementById("password");
-    passwordInput.type = passwordInput.type === "password" ? "text" : "password";
-}
 
-// Mostra a tela de recuperação de senha
-function showForgotPassword() {
-    document.getElementById("login-container").classList.add("hidden");
-    document.getElementById("forgot-password-container").classList.remove("hidden");
-}
-
-// Volta para a tela de login
-function showLogin() {
-    document.getElementById("forgot-password-container").classList.add("hidden");
-    document.getElementById("login-container").classList.remove("hidden");
-}
 
 // Função de login
 async function login() {
@@ -50,10 +34,10 @@ async function login() {
         console.log(result)
         if (response.ok) {
             alert("Funcionou!!!")
-           
+
             mensagem.innerText = "Login realizado com sucesso!";
             mensagem.style.color = "green";
-             // Para depuração
+            // Para depuração
             // Redirecionar ou salvar token aqui, se necessário
         } else {
             mensagem.innerText = "E-mail ou senha incorretos.";
@@ -88,7 +72,4 @@ function showForgotPassword() {
     document.getElementById("forgot-password-container").classList.remove("hidden");
 }
 
-function showLogin() {
-    document.getElementById("forgot-password-container").classList.add("hidden");
-    document.getElementById("login-container").classList.remove("hidden");
-}
+
